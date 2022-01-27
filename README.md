@@ -16,6 +16,13 @@
   ChakraUI, MirageJs e React-Query.
 </p>
 
+### 🔌 Como rodar o projeto
+---
+
+```bash
+# Em progresso...
+```
+
 ### 🔋 Tecnologias
 ---
 
@@ -25,28 +32,6 @@
 - [ChakraUi](https://chakra-ui.com/)
 - [MirageJs](https://miragejs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-### ☑️ Sobre
----
-
-<p>
-  Seguindo as aulas do curso, desenvolvi este website que tem como foco 
-  mostrar notícias sobre React, a ideia principal é que para ver as notícias 
-  você pague uma assinatura e caso não tenha a assinatura você consegue ver 
-  uma preview das notícias.
-</p>
-
-
-Depois de configurar as variáveis de ambiente é necessário executar os seguintes comandos:
-
-```bash
-# Instale as dependências
-$ npm install
-
-# Execute o projeto em desenvolvimento
-$ npm run dev
-
-# Depois de iniciar o projeto em desenvolvimento, basta acessar http://localhost:3000/
-```
 
 ### 🎲 Feito por
 ---
