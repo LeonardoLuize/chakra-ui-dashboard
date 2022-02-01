@@ -1,5 +1,6 @@
 import PaginationItem from "./PaginationItem";
 import { Box, Text, Stack } from "@chakra-ui/react";
+import { GetServerSideProps } from "next";
 interface PaginnationProps {
     totalCountOfRegisters: number;
     registersPerPage?: number;
@@ -17,7 +18,7 @@ function generatePagesArray(from: number, to: number) {
 
 export default function Pagination({ totalCountOfRegisters, registersPerPage = 10, currentPage = 1, onPageChange }: PaginnationProps) {
 
-    const lastPage = Math.floor(totalCountOfRegisters / registersPerPage);
+    const lastPage = totalCountOfRegisters % registersPerPage == 0 ? Math.floor(totalCountOfRegisters / registersPerPage) : Math.ceil(totalCountOfRegisters / registersPerPage);
     const siblingsCount = 1;
 
     const previousPages = currentPage > 1
@@ -80,3 +81,4 @@ export default function Pagination({ totalCountOfRegisters, registersPerPage = 1
         </Stack>
     );
 }
+
